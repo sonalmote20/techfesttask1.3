@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explore Ladakh — Travel With Us</title>
+  <style>
+    body{
+      margin:0; font-family:Inter,system-ui; background:#f5f7fa; color:#111;
+    }
+    header{
+      background:url('https://images.unsplash.com/photo-1509644851121-9a07c49d7ab0?auto=format&fit=crop&w=1600&q=60') center/cover;
+      height:70vh; display:flex; align-items:center; justify-content:center;
+      color:#fff; text-align:center; padding:0 20px;
+    }
+    header h1{font-size:2.2rem; max-width:600px; background:rgba(0,0,0,0.4); padding:20px; border-radius:10px;}
+
+    section{padding:40px 20px; max-width:1100px; margin:auto;}
+    h2{font-size:1.8rem; margin-bottom:20px;}
+    .places, .packages{display:grid; gap:20px; grid-template-columns:1fr;}
+    .card{
+      background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,.1);
+    }
+    .card img{width:100%; height:200px; object-fit:cover;}
+    .card div{padding:15px;}
+
+    form{background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.1); display:grid; gap:12px;}
+    input, textarea{padding:10px; border:1px solid #ccc; border-radius:8px; width:100%;}
+    button{padding:12px; border:none; background:#0077b6; color:#fff; border-radius:8px; cursor:pointer;}
+
+    @media(min-width:720px){
+      header h1{font-size:3rem;}
+      .places, .packages{grid-template-columns:repeat(3,1fr);}
+    }
+      .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(60%);
+    }
+
+    header {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    header .overlay h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    header .cta-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #ffcc00;
+        color: black;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+</style>
+</head>
+<body>
+  <header>
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="ladakh.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h1>Explore Ladakh – Travel with Us</h1>
+            <p>Your dream journey begins here</p>
+            <a href="#places" class="cta-btn">Discover More</a>
+        </div>
+    </header>
+
+  <section>
+    <h2>Places to Visit</h2>
+    <div class="places">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60" alt="Pangong Lake">
+        <div><h3>Pangong Lake</h3><p>Crystal blue waters surrounded by dramatic mountains.</p></div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\User\Desktop\tt3.3\nubravalley.jpeg" alt="Nubra Valley">
+        <div><h3>Nubra Valley</h3><p>Sand dunes, camels and the stunning Shyok River.</p></div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\User\Desktop\tt3.3\khardung.webp" alt="Khardung La">
+        <div><h3>Khardung La</h3><p>One of the highest motorable passes in the world.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Packages</h2>
+    <div class="packages">
+      <div class="card">
+        <div>
+          <h3>Budget Trip — ₹15,000</h3>
+          <p>3 Days · Stay + Breakfast · Local Sightseeing</p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h3>Adventure Trip — ₹30,000</h3>
+          <p>5 Days · Trekking · Camping · Bike Ride</p>
+        </div>
+      </div>
+      <div class="card">
+        <div>
+          <h3>Luxury Trip — ₹50,000</h3>
+          <p>7 Days · Premium Stay · Private Cab · Meals Included</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Phone Number">
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
